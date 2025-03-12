@@ -1,6 +1,6 @@
-# 天气MCP服务
+# 天气 MCP 服务
 
-这是一个基于Model Context Protocol (MCP)的天气服务，提供天气预报和天气警报功能。
+这是一个基于 Model Context Protocol (MCP)的天气服务，提供天气预报和天气警报功能。
 
 ## 功能
 
@@ -9,13 +9,13 @@
 
 ## 安装
 
-### 方法1: 从npm安装（发布后）
+### 方法 1: 从 npm 安装（发布后）
 
 ```bash
 npm install -g test-mcp
 ```
 
-### 方法2: 从GitHub安装
+### 方法 2: 从 GitHub 安装
 
 ```bash
 git clone https://github.com/你的用户名/test-mcp.git
@@ -25,48 +25,42 @@ npm run build
 npm link
 ```
 
-### 方法3: 使用npx（无需安装）
+### 方法 3: 使用 npx（无需安装）
 
-无需安装，直接通过npx使用：
+无需安装，直接通过 npx 使用：
 
 ```bash
-npx test-mcp start
+npx test-mcp
 ```
 
-## 在Windsurf中配置使用
+## 在 Windsurf 中配置使用
 
-要在Windsurf中使用此MCP服务，您需要在Windsurf的MCP配置文件中添加以下配置：
+要在 Windsurf 中使用此 MCP 服务，您需要在 Windsurf 的 MCP 配置文件中添加以下配置：
 
-1. 打开Windsurf的MCP配置文件（通常位于`~/.codeium/windsurf/mcp_config.json`）
+1. 打开 Windsurf 的 MCP 配置文件（通常位于`~/.codeium/windsurf/mcp_config.json`）
 2. 根据您选择的安装方式，添加相应配置：
 
-
-### 如果您从源代码安装（方法1）
+### 如果您从源代码安装（方法 1）
 
 ```json
 {
   "mcpServers": {
     "weather": {
       "command": "node",
-      "args": [
-        "路径/到/test-mcp/build/index.js"
-      ]
+      "args": ["路径/到/test-mcp/build/index.js"]
     }
   }
 }
 ```
 
-### 如果您想使用npx而不安装（方法2）
+### 如果您想使用 npx 而不安装（方法 2）
 
 ```json
 {
   "mcpServers": {
     "weather": {
       "command": "npx",
-      "args": [
-        "test-mcp",
-        "start"
-      ]
+      "args": ["-y", "test-mcp"]
     }
   }
 }
@@ -74,7 +68,7 @@ npx test-mcp start
 
 ## 可用工具
 
-此MCP服务提供以下工具：
+此 MCP 服务提供以下工具：
 
 ### 1. 获取天气预报
 
@@ -83,6 +77,7 @@ get-forecast
 ```
 
 参数:
+
 - `latitude`: 纬度 (-90 到 90)
 - `longitude`: 经度 (-180 到 180)
 
@@ -93,6 +88,7 @@ get-alerts
 ```
 
 参数:
+
 - `state`: 两字母州代码 (例如: CA, NY)
 
 ## 开发
