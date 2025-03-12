@@ -70,10 +70,10 @@ npx test-mcp
 
 此 MCP 服务提供以下工具：
 
-### 1. 获取天气预报
+### 1. 获取全世界天气预报
 
 ```
-get-forecast
+get-world-weather
 ```
 
 参数:
@@ -81,15 +81,6 @@ get-forecast
 - `latitude`: 纬度 (-90 到 90)
 - `longitude`: 经度 (-180 到 180)
 
-### 2. 获取天气警报
-
-```
-get-alerts
-```
-
-参数:
-
-- `state`: 两字母州代码 (例如: CA, NY)
 
 ## 开发
 
