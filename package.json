@@ -1,20 +1,30 @@
 {
   "name": "test-mcp",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.5",
+  "main": "build/index.js",
   "type": "module",
+  "bin": {
+    "test-mcp": "./build/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "node ./build/index.js",
+    "dev": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "files": [
     "build"
   ],
-  "author": "",
+  "author": "zkluck",
   "license": "ISC",
   "description": "一个天气MCP服务，提供天气预报和天气警报功能",
-  "keywords": ["mcp", "weather", "forecast", "alerts", "windsurf", "codeium"],
+  "keywords": [
+    "mcp",
+    "weather",
+    "forecast",
+    "alerts",
+    "windsurf",
+    "codeium"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
     "@types/node": "^22.13.10",
