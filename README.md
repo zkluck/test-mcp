@@ -17,7 +17,7 @@ npm install -g test-mcp
 ### 方法 2: 从 GitHub 安装
 
 ```bash
-git clone https://github.com/你的用户名/test-mcp.git
+git clone https://github.com/zkluck/test-mcp.git
 cd test-mcp
 npm install
 npm run build
@@ -91,7 +91,7 @@ npm install
 npm run build
 
 # 运行服务
-npm start
+npm dev
 ```
 
 ## 许可证
